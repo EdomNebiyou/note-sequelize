@@ -30,7 +30,7 @@ export default function NoteForm({isEditing=false,initialState=null}){
         <>
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder="title" value={title} onChange={(e)=>setTitle(e.target.value)}/>
-            <button disabled={isCreating||isCreating}>{isEditing?'update note':'create note'}</button>
+            <button disabled={isCreating||isUpdating}>{isEditing?'update note':'create note'}</button>
         </form>
         </>
     )
